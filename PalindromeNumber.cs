@@ -21,8 +21,8 @@ public class Program
 		return isPalindrome;
    	 }
 	
-	 public static void Main()
-	 {
+	public static void Main()
+	{
 		var x = 121;
 		var y = 122; 
 		var z = 1;
@@ -30,5 +30,5 @@ public class Program
 		Console.WriteLine($"x is a palindrome : {IsPalindrome(x)}");
 		Console.WriteLine($"y is a palindrome : {IsPalindrome(y)}");
 		Console.WriteLine($"z is a palindrome : {IsPalindrome(z)}");
-     }
+     	}
 }
