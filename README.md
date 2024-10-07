@@ -20,4 +20,4 @@ Given an integer x, return true if x is a palindrome, and false if not.
 # Example 4 : 
     
     Input_4 : x = 100021 
-    Output_4 : true, bacause x is not a palindrome (it can be read both ways)
+    Output_4 : true, bacause x is not a palindrome (it can't be read both ways)
