@@ -3,7 +3,7 @@ using System;
 public class Program
 {
 	    // Méthode 1
-      public static bool IsPalindrome(int x) 
+        public static bool IsPalindrome(int x) 
 	    {    
 	          var xString = x.ToString();
 		        var length = xString.Length;
@@ -18,10 +18,8 @@ public class Program
 		        }
 		
 		        return isPalindrome;
-      }
-	
-		  return isPalindrome;
-     
+      	}
+	 
 	    /* 
 	    // Méthode 2
 	    public static bool IsPalindrome(int x) 
