@@ -14,32 +14,32 @@ public class Program
 		for(int i=0; i<(length - (i+1)); i++) 
 		{
 			isPalindrome = xString[i] == xString[length - (i+1)];
-            if(!isPalindrome) return false; 
+			if(!isPalindrome) return false; 
 		}
 		
 		return isPalindrome;
-    }
+	}
 
 	/* 
 	// Méthode 2
 	public static bool IsPalindrome(int x) 
 	{
 		//Convertir x en string 
-        var xString = x.ToString();
+		var xString = x.ToString();
 		var xStringTemp = "";
 		var isPalindrome = false; 
 		
 		//Inverser xString : xString = 122 alors xStringTemp = 221 
 		for(int i = (xString.Length-1); i>=0 ;i--)
 		{
-            xStringTemp += xString[i];
+			xStringTemp += xString[i];
 		}
 
-        if(xStringTemp != xString) isPalindrome = false;
-        else isPalindrome = true;
+		if(xStringTemp != xString) isPalindrome = false;
+		else isPalindrome = true;
 		
 		return isPalindrome;
-    }
+	}
 	*/
 	
 	public static void Main()
@@ -53,5 +53,5 @@ public class Program
 		Console.WriteLine($"y is a palindrome : {IsPalindrome(y)}");
 		Console.WriteLine($"z is a palindrome : {IsPalindrome(z)}");
 		Console.WriteLine($"w is a palindrome : {IsPalindrome(w)}");
-    }
+	}
 }
