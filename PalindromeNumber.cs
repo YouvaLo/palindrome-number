@@ -4,20 +4,20 @@ public class Program
 {
 	    // Méthode 1
         public static bool IsPalindrome(int x) 
-	    {    
-	          var xString = x.ToString();
-		        var length = xString.Length;
-		        var isPalindrome = false;
-		
-		        if(xString.Length == 1) return true;
-		
-		        for(int i=0; i<(length - (i+1)); i++) 
-		        {
-			            isPalindrome = xString[i] == xString[length - (i+1)];
-			            if(!isPalindrome) return false; 
-		        }
-		
-		        return isPalindrome;
+	{    
+		var xString = x.ToString();
+		var length = xString.Length;
+		var isPalindrome = false;
+	
+		if(xString.Length == 1) return true;
+	
+		for(int i=0; i<(length - (i+1)); i++) 
+		{
+			    isPalindrome = xString[i] == xString[length - (i+1)];
+			    if(!isPalindrome) return false; 
+		}
+	
+		return isPalindrome;
       	}
 	 
 	    /* 
