@@ -3,9 +3,9 @@ using System;
 public class Program
 {
 	// Méthode 1
-	public static bool IsPalindrome(int x) 
+    public static bool IsPalindrome(int x) 
 	{    
-		var xString = x.ToString();
+	    var xString = x.ToString();
 		var length = xString.Length;
 		var isPalindrome = false;
 		
@@ -14,7 +14,7 @@ public class Program
 		for(int i=0; i<(length - (i+1)); i++) 
 		{
 			  isPalindrome = xString[i] == xString[length - (i+1)];
-        	  	  if(!isPalindrome) return false; 
+        	  if(!isPalindrome) return false; 
 		}
 		
 		return isPalindrome;
@@ -45,13 +45,13 @@ public class Program
 
 public static void Main()
 {
-		var x = 121;
-		var y = 22; 
-		var z = 1;
-		var w = 100021;
+	var x = 121;
+	var y = 22; 
+	var z = 1;
+	var w = 100021;
 		
-		Console.WriteLine($"x is a palindrome : {IsPalindrome(x)}");
-		Console.WriteLine($"y is a palindrome : {IsPalindrome(y)}");
-		Console.WriteLine($"z is a palindrome : {IsPalindrome(z)}");
-		Console.WriteLine($"w is a palindrome : {IsPalindrome(w)}");
+	Console.WriteLine($"x is a palindrome : {IsPalindrome(x)}");
+	Console.WriteLine($"y is a palindrome : {IsPalindrome(y)}");
+	Console.WriteLine($"z is a palindrome : {IsPalindrome(z)}");
+	Console.WriteLine($"w is a palindrome : {IsPalindrome(w)}");
 }
