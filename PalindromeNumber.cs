@@ -2,8 +2,8 @@ using System;
 		
 public class Program
 {
-	    // Méthode 1
-        public static bool IsPalindrome(int x) 
+	// Méthode 1
+	public static bool IsPalindrome(int x) 
 	{    
 		var xString = x.ToString();
 		var length = xString.Length;
@@ -18,28 +18,28 @@ public class Program
 		}
 	
 		return isPalindrome;
-      	}
+	}
 	 
-	    /* 
-	    // Méthode 2
-	    public static bool IsPalindrome(int x) 
-	    {
-		        //Convertir x en string 
-            var xString = x.ToString();
-		        var xStringTemp = "";
-		        var isPalindrome = false; 
-		
-		        //Invert xString: xString = 122 then xStringTemp = 221
-		        for(int i = (xString.Length-1); i>=0 ;i--)
-		        {
-                  xStringTemp += xString[i];
-		        }
+    	/* 
+    	// Méthode 2
+    	public static bool IsPalindrome(int x) 
+    	{
+		//Convertir x en string 
+    		var xString = x.ToString();
+		var xStringTemp = "";
+		var isPalindrome = false; 
+	
+		//Invert xString: xString = 122 then xStringTemp = 221
+		for(int i = (xString.Length-1); i>=0 ;i--)
+		{
+	  		xStringTemp += xString[i];
+		}
 
-		        if(xStringTemp != xString) isPalindrome = false;
-		        else isPalindrome = true;
-            return isPalindrome;
-		  }
-      */
+		if(xStringTemp != xString) isPalindrome = false;
+		else isPalindrome = true;
+    		return isPalindrome;
+	  }
+    	*/
 }
 
 public static void Main()
