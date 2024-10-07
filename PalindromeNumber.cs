@@ -14,11 +14,11 @@ public class Program
 		for(int i=0; i<(length - (i+1)); i++) 
 		{
 			  isPalindrome = xString[i] == xString[length - (i+1)];
-        if(!isPalindrome) return false; 
+        	  if(!isPalindrome) return false; 
 		}
 		
 		return isPalindrome;
-  }
+     }
 
 	/* 
 	// Méthode 2
